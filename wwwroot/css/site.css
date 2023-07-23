@@ -1,0 +1,150 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+ul {
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    list-style-type: none;
+    width: 690px;
+    height: 100px;
+}
+
+    ul li {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-right: 10px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 36px;
+    }
+
+        ul li:nth-child(5n) {
+            margin-right: 40px;
+        }
+
+.player-ball-placeholder {
+    background: #222222;
+    background: -moz-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #222222), color-stop(100%, black));
+    background: -webkit-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -o-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -ms-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: linear-gradient(135deg, #222222 0%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#222222", endColorstr="#000000",GradientType=1 );
+}
+
+.player-lottery-ball {
+    background: red;
+    background: -moz-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, red), color-stop(100%, #a50000));
+    background: -webkit-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -o-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -ms-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: linear-gradient(135deg, red 0%, #a50000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff0000", endColorstr="#a50000",GradientType=1 );
+    color: white;
+}
+
+.player-lottery-ball:last-child {
+    background: #a50000;
+    background: -moz-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #a50000), color-stop(100%, #5e0000));
+    background: -webkit-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -o-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -ms-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: linear-gradient(135deg, #a50000 0%, #5e0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a50000", endColorstr="#5e0000",GradientType=1 );
+}
+
+.draw-ball-placeholder {
+    background: #222222;
+    background: -moz-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #222222), color-stop(100%, black));
+    background: -webkit-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -o-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: -ms-linear-gradient(-45deg, #222222 0%, black 100%);
+    background: linear-gradient(135deg, #222222 0%, black 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#222222", endColorstr="#000000",GradientType=1 );
+}
+
+.draw-lottery-ball {
+    background: red;
+    background: -moz-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, red), color-stop(100%, #a50000));
+    background: -webkit-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -o-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: -ms-linear-gradient(-45deg, red 0%, #a50000 100%);
+    background: linear-gradient(135deg, red 0%, #a50000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff0000", endColorstr="#a50000",GradientType=1 );
+    color: white;
+}
+
+.draw-lottery-ball:last-child {
+    background: #a50000;
+    background: -moz-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #a50000), color-stop(100%, #5e0000));
+    background: -webkit-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -o-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: -ms-linear-gradient(-45deg, #a50000 0%, #5e0000 100%);
+    background: linear-gradient(135deg, #a50000 0%, #5e0000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a50000", endColorstr="#5e0000",GradientType=1 );
+}
+
+.manual-picks {
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background: #b200ff
+}
+
+.lucky-dip {
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background: #ffd800
+}
+
+.start-game {
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background: #00ff21;
+}
+
+.reset-game {
+    bottom: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    background: #0026ff;
+}

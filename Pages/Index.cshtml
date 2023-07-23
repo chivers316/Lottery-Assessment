@@ -1,0 +1,68 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Lottery Assessment";
+}
+
+<h1>Lottery</h1>
+
+<form>
+    <label for="number1">Number (between 1 and 59):</label>
+    <input type="number" id="number1" name="number1" value="" min="1" max="59" onchange="checkValue()"></br>
+    <label for="number2">Number (between 1 and 59):</label>
+    <input type="number" id="number2" name="number2" value="" min="1" max="59" onchange="checkValue()"></br>
+    <label for="number3">Number (between 1 and 59):</label>
+    <input type="number" id="number3" name="number3" value="" min="1" max="59" onchange="checkValue()"></br>
+    <label for="number4">Number (between 1 and 59):</label>
+    <input type="number" id="number4" name="number4" value="" min="1" max="59" onchange="checkValue()"></br>
+    <label for="number5">Number (between 1 and 59):</label>
+    <input type="number" id="number5" name="number5" value="" min="1" max="59" onchange="checkValue()"></br>
+    <label for="number6">Number (between 1 and 59):</label>
+    <input type="number" id="number6" name="number6" value="" min="1" max="59" onchange="checkValue()"></br></br>
+</form>
+
+<div id="scores" class="score">
+    <div class="playerSection">
+        <p id="playerScore">Player: 0</p>
+    </div>
+</div>
+
+<div style="overflow-x:auto;">
+
+        <label><h4>Player Picks</h4></label>
+        <ul class="player-ball-placeholders" hidden>
+            <li class="player-ball-placeholder"></li>
+            <li class="player-ball-placeholder"></li>
+            <li class="player-ball-placeholder"></li>
+            <li class="player-ball-placeholder"></li>
+            <li class="player-ball-placeholder"></li>
+            <li class="player-ball-placeholder"></li>
+        </ul>
+        <ul class="player-lottery"></ul>
+
+</div>
+
+<div style="overflow-x:auto;">
+        <label><h4>Draw Picks</h4></label>
+        <ul class="draw-ball-placeholders" hidden>
+            <li class="draw-ball-placeholder"></li>
+            <li class="draw-ball-placeholder"></li>
+            <li class="draw-ball-placeholder"></li>
+            <li class="draw-ball-placeholder"></li>
+            <li class="draw-ball-placeholder"></li>
+            <li class="draw-ball-placeholder"></li>
+        </ul>
+        <ul class="draw-lottery"></ul>
+
+ </div>
+
+ </br>
+
+<button class="manual-picks">Manual</button>
+<button class="lucky-dip">Lucky Dip</button>
+<button class="start-game">Start Game/button>
+<button class="reset-game">Reset</button>
+
+</br>
+
+</div>
